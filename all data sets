@@ -162,6 +162,7 @@
     }
    ],
    "source": [
+    "#replacing str columns w int\n",
     "movie_budget = pd.read_csv('data/zippedData/tn.movie_budgets.csv.gz')\n",
     "movie_budget.production_budget=movie_budget.production_budget.str.replace('$', '').str.replace(',','').astype(int)\n",
     "movie_budget.domestic_gross=movie_budget.domestic_gross.str.replace('$', '').str.replace(',','').astype(int)"
@@ -200,6 +201,7 @@
     }
    ],
    "source": [
+    "#can't get this line to run. not sure why\n",
     "movie_budget.worldwide_gross=movie_budget.worldwide_gross.str.replace('$', '').str.replace(',','').astype(int)"
    ]
   },
@@ -1236,7 +1238,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 22,
    "id": "fc6af09f-c3e8-425c-9003-2841e7fc3fe9",
    "metadata": {},
    "outputs": [],
